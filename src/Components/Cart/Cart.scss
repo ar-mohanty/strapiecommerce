@@ -1,0 +1,86 @@
+:root{
+  --dark-blue:#1d242d;
+  --light-blue:#EAEEF2;
+  --subtitle:#6f7a87;
+  --title: #1d242b;
+  --para: #a1a9b2;
+  --icon-bg: #f2f3f7;
+  --sale-red:#CC0D00;
+}
+.cart{
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  z-index: 999;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 10px;
+
+  h2{
+    margin-bottom: 30px;
+    color: var(--title);
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    img{
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .details{
+      h1{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      p{
+        color: var(--para);
+      }
+
+      .price{
+        color: var(--subtitle);
+      }
+    }
+
+    .delete{
+      color: var(--sale-red);
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+  .total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  button{
+    width: 250px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--dark-blue);
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--icon-bg);
+    border-radius: 10px;
+  }
+
+  .reset{
+    color: var(--sale-red);
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}

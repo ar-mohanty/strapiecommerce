@@ -1,0 +1,92 @@
+:root{
+  --dark-blue:#1d242d;
+  --light-blue:#EAEEF2;
+  --subtitle:#6f7a87;
+  --title: #1d242b;
+  --para: #a1a9b2;
+  --icon-bg: #f2f3f7;
+  --sale-red:#CC0D00;
+}
+
+.contactContainer{
+  background: var(--light-blue);
+  padding: 0px 0px 50px 0px;
+
+  h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 68px;
+    word-spacing: 10px;
+    padding: 50px 0px 0px 0px;
+  }
+  h2{
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 58px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--subtitle);
+    padding-left: 300px;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+
+  .contactdetails{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+
+    .leftcdetail{
+      h4{
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-left: 10px;
+      }
+      .cdetail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 20px 10px;
+
+        h5{
+          font-size: 16px;
+          color: var(--title);
+        }
+        p{
+          font-size: 16px;
+          color: var(--subtitle);
+        }
+      }
+    }
+
+    .rightcdetail{
+      h4{
+        font-size: 24px;
+        padding-left: 10px;
+        text-transform: uppercase;
+      }
+      .cdetail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 10px; 
+
+        h5{
+          font-size: 16px;
+          color: var(--title);
+        }
+        p{
+          font-size: 16px;
+          color: var(--subtitle);
+        }
+
+      }
+    }
+  }
+
+}

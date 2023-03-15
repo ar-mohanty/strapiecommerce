@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+body{
+  font-family: 'Lora', serif;
+  overflow-x: hidden;
+}
+
+:root{
+  --dark-blue:#1d242d;
+  --light-blue:#EAEEF2;
+  --subtitle:#6f7a87;
+  --title: #1d242b;
+  --para: #a1a9b2;
+  --icon-bg: #f2f3f7;
+  --sale-red:#CC0D00;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.app{
+  .link{
+    text-decoration: none;
+    color: inherit;
+  }
+}

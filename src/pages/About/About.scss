@@ -1,0 +1,90 @@
+:root{
+  --dark-blue:#1d242d;
+  --light-blue:#EAEEF2;
+  --subtitle:#6f7a87;
+  --title: #1d242b;
+  --para: #a1a9b2;
+  --icon-bg: #f2f3f7;
+  --sale-red:#CC0D00;
+}
+
+.aboutContainer{
+  margin: 30px 0px 0px 0px;
+
+  .aboutTitle{
+    font-size: 56px;
+    text-align: center;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    line-height: 70px;
+    padding: 30px 0px;
+    color: var(--title);
+  }
+
+  .aboutsubtitle{
+    font-size: 18px;
+    color: var(--subtitle);
+    text-align: center;
+    padding: 0% 20%;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .aboutImg{
+    display: flex;
+    align-items: center;justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    img{
+      width: 350px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      border-radius: 6px;
+      transition: all 0.8s ease-in-out;
+
+      &:hover{
+        transform: translateY(-20px);
+      }
+    }
+    .centeraboutimg{
+      margin-top: 40px;
+    }
+    
+
+  }
+  .marquee-container{
+    background: #000;
+    color: #fff;
+
+    .overlay::before{
+      background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%);
+    }
+    .overlay::after{
+      background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%);
+    }
+  }
+  
+  
+  .parallexImg{
+    height: 80vh;
+    width: 100vw;
+    background: url('../../../public/img/about5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    p{
+      text-align: center;
+      display: flex;
+      align-items: center;justify-content: center;
+      font-size: 22px;
+      font-weight: 400;
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 100%;
+      color: var(--light-blue);
+      padding: 0px 10vw;
+      line-height: 34px;
+    }
+  }
+
+}
