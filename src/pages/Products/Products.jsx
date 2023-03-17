@@ -87,13 +87,16 @@ const Products = () => {
       </div>
       <div className="right">
         <div className="catImg">
-          <img
+          
+          <video
             src={
               process.env.REACT_APP_UPLOAD_URL +
-              category?.attributes?.img?.data?.attributes?.url
+              category?.attributes?.catVid?.data?.attributes?.url
             }
-            alt="catImg"
-          />
+            loop
+            autoPlay
+            muted
+          ></video>
         </div>
         <List
           catId={catId}

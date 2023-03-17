@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
+import Search from "../Search/Search";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const products = useSelector((state) => state.cart.products);
 
   return (
@@ -75,7 +77,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="icons">
-            <SearchOutlinedIcon />
+            <SearchOutlinedIcon onClick={() => setShowSearch(true)}/>
             <FavoriteBorderIcon />
             <PersonOutlinedIcon />
             <div className="cartIcon" onClick={() => setOpen(!open)}>
@@ -86,6 +88,7 @@ const Navbar = () => {
         </div>
       </div>
       {open && <Cart />}
+      {showSearch && <Search setShowSearch={setShowSearch} />}
     </div>
   );
 };

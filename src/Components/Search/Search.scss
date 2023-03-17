@@ -1,0 +1,122 @@
+:root{
+  --dark-blue:#1d242d;
+  --light-blue:#EAEEF2;
+  --subtitle:#6f7a87;
+  --title: #1d242b;
+  --para: #a1a9b2;
+  --icon-bg: #f2f3f7;
+  --sale-red:#CC0D00;
+}
+.searchWrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: translateY(100%);
+  animation: slideSearchWindow 0.5s ease-in-out forwards;
+
+  .form-field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid var(--subtitle);
+    position: relative;
+
+    input{
+      width: 100%;
+      max-width: 1200px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--dark-blue);
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+    }
+
+    .close-btn{
+      position: absolute;
+      font-size: 20px;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #1d242b;
+      cursor: pointer;
+    }
+
+  }
+  .search-result-content{
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    ::-webkit-scrollbar{
+      display: none;
+    }
+
+    .search-results{
+      height: calc(100vh - 10px);
+      overflow: auto;
+      margin: 20px 0;
+
+      .search-result-item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        cursor: pointer;
+
+        .img-container{
+          background: var(--icon-bg);
+          width: 80px;
+          height: 80px;
+          flex-shrink: 0;
+          border-radius: 6px;
+
+
+          img{
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+            border-radius: 10px;
+            object-fit: contain;
+
+          }
+        } 
+        .product-details{
+          overflow: hidden;
+          .pname{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-weight: 600;
+            display: block;
+            padding-right: 25px;
+            color: var(--dark-blue);
+          }
+          .pdesc{
+            font-size: 14px;
+            line-height: 1;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: var(--para);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideSearchWindow {
+  0%{transform: translateY(100%);}
+  100%{transform: translateY(0%);}
+}

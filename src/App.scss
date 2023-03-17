@@ -4,6 +4,9 @@
 body{
   font-family: 'Lora', serif;
   overflow-x: hidden;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 
 :root{
