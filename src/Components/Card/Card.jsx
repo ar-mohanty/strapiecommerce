@@ -15,10 +15,7 @@ const Card = ({ item }) => {
             className="mainImg"
           />
           <img
-            src={
-              process.env.REACT_APP_UPLOAD_URL +
-              item.attributes.img2.data.attributes?.url
-            }
+            src={item.attributes.img2.data.attributes?.url}
             alt=""
             className="secondImg"
           />

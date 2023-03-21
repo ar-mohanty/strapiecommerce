@@ -87,12 +87,8 @@ const Products = () => {
       </div>
       <div className="right">
         <div className="catImg">
-          
           <video
-            src={
-              process.env.REACT_APP_UPLOAD_URL +
-              category?.attributes?.catVid?.data?.attributes?.url
-            }
+            src={category?.attributes?.catVid?.data?.attributes?.url}
             loop
             autoPlay
             muted
