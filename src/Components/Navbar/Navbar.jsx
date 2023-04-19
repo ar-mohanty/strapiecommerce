@@ -50,7 +50,8 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="center">
+        <div className="center" style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
+          <img src="../img/logo.png" width="36px" alt="" style={{marginRight:"15px"}}/>
           <Link className="link" to="/">
             Amazee
           </Link>
